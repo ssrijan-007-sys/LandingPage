@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shreejee Ayucare - Karela Jamun Powder</title>
+
+
+  <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1472893487275749');
+    fbq('track', 'PageView');
+    </script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1472893487275749&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    /* Base */
+    body { font-family: 'Poppins', sans-serif; margin: 0; color: #333; background: #f9f9f9; line-height: 1.6; }
+    h1, h2, h3 { font-weight: 700; margin-bottom: 10px; }
+    section {
+  width: 100%;
+  display: block;   /* ensures stacking */
+  clear: both;      /* prevents floating side-by-side */
+}
+    /* Hero */
+    #mainImage { width: 100%; height: 420px; object-fit: contain; border-radius: 12px; transition: opacity 0.4s ease-in-out; }
+    .thumbnail img { cursor: pointer; width: 100px; height: 100px; object-fit: contain; border-radius: 10px; border: 2px solid #e5e7eb; transition: transform 0.2s, border-color 0.3s; }
+    .thumbnail img:hover { transform: scale(1.05); border-color: #6b21a8; }
+    .fade-out { opacity: 0; } .fade-in { opacity: 1; }
+
+    /* Buttons */
+    .btn { display: inline-block; padding: 12px 25px; margin: 10px; border-radius: 30px; font-weight: 600; text-decoration: none; transition: 0.3s ease; }
+    .btn.primary { background: #f1c40f; color: #000; }
+    .btn.secondary { background: white; color: #27ae60; border: 2px solid #27ae60; }
+    .btn:hover { transform: scale(1.05); }
+
+    /* Benefits */
+    .benefits .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+    .card { background: white; border-radius: 15px; padding: 20px; box-shadow: 0 6px 15px rgba(0,0,0,0.1); transition: 0.3s; }
+    .card:hover { transform: translateY(-5px); }
+    .benefits .card img { display: block; margin-left: auto; margin-right: auto; }
+
+    /* Ingredients */
+    .ingredients img { width: 100%; max-width: 100%; height: auto; display: block; margin: 20px 0; object-fit: cover; }
+
+    
+    /* Reviews */
+    .reviews { background: #fff; padding: 60px 20px; }
+    .reviews h2 { font-size: 2rem; margin-bottom: 10px; }
+    .reviews .subtitle { color: #666; margin-bottom: 30px; }
+    .review-slider { max-width: 800px; margin: 0 auto; position: relative; }
+    .review { display: none; background: #f9f9f9; border-radius: 15px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+    .review.active { display: block; }
+    .review p { font-size: 1.1rem; font-style: italic; }
+    .review h4 { margin-top: 15px; color: #27ae60; }
+    .stars { margin-top: 10px; color: #f1c40f; font-size: 1.2rem; }
+    .review-dots { margin-top: 20px; text-align: center; }
+    .review-dots .dot { height: 12px; width: 12px; margin: 0 5px; background-color: #bbb; border-radius: 50%; display: inline-block; cursor: pointer; }
+    .review-dots .dot.active { background-color: #27ae60; }
+
+    /* FAQ */
+    .faq .faq-item { max-width: 700px; margin: 10px auto; text-align: left; }
+    .faq-question { width: 100%; padding: 15px; border: none; background: white; border-radius: 10px; box-shadow: 0 3px 8px rgba(0,0,0,0.1); font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; background: #f9f9f9; padding: 0 15px; border-radius: 0 0 10px 10px; }
+    .faq-answer p { margin: 10px 0; }
+
+    /* Sticky CTA */
+    .sticky-cta { position: fixed; bottom: 0; left: 0; width: 100%; background: rgba(255,255,255,0.9); backdrop-filter: blur(10px); border-radius: 20px 20px 0 0; box-shadow: 0 -4px 12px rgba(0,0,0,0.15); display: flex; justify-content: center; gap: 15px; padding: 12px 20px; z-index: 1000; }
+
+    /* Footer */
+    footer { background: #2c3e50; color: white; text-align: center; padding: 20px; }
+  </style>
+</head>
+<body>
+
+<!-- ✅ HERO -->
+<div class="max-w-6xl mx-auto p-4 md:p-8">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+    <div>
+      <div class="w-full h-96 border rounded-xl shadow flex items-center justify-center bg-white">
+        <img id="mainImage" src="assets/1.png" alt="Karela Jamun Powder" class="max-h-full max-w-full object-contain">
+      </div>
+      <div class="flex gap-3 mt-4 overflow-x-auto thumbnail">
+        <img src="assets/2.png" alt="Thumb1">
+        <img src="assets/3.webp" alt="Thumb2">
+        <img src="assets/4.jpg" alt="Thumb3">
+        <img src="assets/5.png" alt="Thumb4">
+        <img src="assets/6.jpg" alt="Thumb5">
+      </div>
+    </div>
+    <div>
+      <h1 class="text-3xl md:text-4xl font-bold leading-snug mb-4">Karela Jamun Powder | Manage Blood Sugar Naturally</h1>
+      <div class="flex items-center mb-4">
+        <span class="text-yellow-500 text-xl">★★★★★</span>
+        <span class="ml-2 text-gray-600 text-lg">(277 reviews)</span>
+      </div>
+      <p class="text-gray-700 text-lg leading-relaxed mb-6">Keep your blood sugar under control with Ayurveda. Made with <strong>Karela</strong>, <strong>Jamun</strong> and 11 herbs.</p>
+      <div class="grid grid-cols-2 gap-6 mb-6 text-gray-800">
+        <div class="flex items-center gap-3"><i data-lucide="droplet" class="text-purple-600 w-7 h-7"></i><span>Balances<br>Sugar</span></div>
+        <div class="flex items-center gap-3"><i data-lucide="heart" class="text-purple-600 w-7 h-7"></i><span>Improves<br>Heart</span></div>
+        <div class="flex items-center gap-3"><i data-lucide="shield-check" class="text-purple-600 w-7 h-7"></i><span>Boosts<br>Immunity</span></div>
+        <div class="flex items-center gap-3"><i data-lucide="stethoscope" class="text-purple-600 w-7 h-7"></i><span>Detoxifies<br>Body</span></div>
+      <!-- ✅ Open Modal Button -->
+<div class=" justify-center mt-20">
+  <button class=" openModalBtn bg-black text-white px-6 py-3 rounded-lg">
+    Book Free Consultation
+  </button>
+</div>
+  </div>
+</div>
+</div>
+
+
+<!-- ✅ BENEFITS -->
+<section class="benefits">
+  <h2 class="text-center text-2xl md:text-3xl font-bold mb-6">Why Choose Shreejee Ayucare?</h2>
+  <p class="subtitle">Trusted by thousands for natural sugar management</p>
+  <div class="grid">
+    <div class="card"><img src="assets\11_f7108f4f-9922-4ae6-a743-20acb5a93f8f.webp"><h3>Controls Sugar</h3><p>Karela & Jamun regulate glucose levels effectively.</p></div>
+    <div class="card"><img src="assets\13_f85c94ca-64a6-49fa-bb2e-371063a75b3f.webp"><h3>Boosts Immunity</h3><p>Packed with antioxidants to strengthen defense.</p></div>
+    <div class="card"><img src="assets\14_dbec515c-6552-46a8-a898-3480162c7397.webp"><h3>Improves Digestion</h3><p>Supports metabolism and digestion.</p></div>
+    <div class="card"><img src="assets\10_d0660cdd-bc77-4475-82d5-1533d7881889.webp"><h3>100% Ayurvedic</h3><p>Pure herbal formulation – no side effects.</p></div>
+  </div>
+</section>
+
+<!-- ✅ INGREDIENTS -->
+<section class="ingredients w-full">
+  <h2 class="text-center text-2xl md:text-3xl font-bold mb-6 mt-5">Natural Ingredients</h2>
+  <img src="assets/ingredients.jpg" alt="Ingredients">
+</section>
+
+<!-- Directions of Use Section --> 
+ <section class="directions-use max-w-6xl mx-auto py-12 px-4"> 
+  <h2 class="text-2xl md:text-3xl font-bold text-center mb-2">DIRECTIONS OF USE</h2>
+   <p class="text-gray-600 text-center mb-10">How To Consume This Powder</p> 
+   <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+     <!-- Step 1 --> 
+      <div class="border-2 border-purple-600 rounded-xl overflow-hidden shadow text-center"> 
+        <img src="assets/Step1.png" alt="Step 1" class="w-full"> <div class="p-4"> 
+          <div class="flex items-start gap-3"> 
+            <span class="bg-purple-600 text-white font-bold rounded-full w-8 h-8 flex items-center justify-center">1</span> 
+            <p class="text-gray-800 text-left"> Mix 1 Scoop (4gm–5gm) of powder in 1 cup of lukewarm water </p> 
+          </div> 
+        </div> 
+      </div>
+       <!-- Step 2 -->
+         <div class="border-2 border-purple-600 rounded-xl overflow-hidden shadow text-center"> 
+          <img src="assets/Step2.png" alt="Step 2" class="w-full"> 
+          <div class="p-4"> <div class="flex items-start gap-3">
+             <span class="bg-purple-600 text-white font-bold rounded-full w-8 h-8 flex items-center justify-center">2</span>
+              <p class="text-gray-800 text-left"> Stir well using a spoon until the powder dissolves entirely </p>
+             </div> 
+            </div>
+           </div>
+            <!-- Step 3 --> 
+             <div class="border-2 border-purple-600 rounded-xl overflow-hidden shadow text-center">
+               <img src="assets/Step3.png" alt="Step 3" class="w-full h-128"> 
+               <div class="p-4"> 
+                <div class="flex items-start gap-3">
+                   <span class="bg-purple-600 text-white font-bold rounded-full w-8 h-8 flex items-center justify-center">3</span> 
+                   <p class="text-gray-800 text-left"> Consume it on an empty stomach twice a day <br>- In the morning <br>- In the evening </p> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>
+           </section>
+
+<!-- ✅ REVIEWS -->
+<section class="reviews text-center">
+  <h2>What Our Customers Say</h2>
+  <p class="subtitle">Real experiences</p>
+  <div class="review-slider">
+    <div class="review active"><p>“I feel much healthier and energetic.”</p><h4>- Rajesh</h4><div class="stars">★★★★★</div></div>
+    <div class="review"><p>“Excellent product! My digestion improved.”</p><h4>- Anjali</h4><div class="stars">★★★★★</div></div>
+    <div class="review"><p>“Saw results in 1 month. Recommended.”</p><h4>- Manoj</h4><div class="stars">★★★★☆</div></div>
+  </div>
+  <div class="review-dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+</section>
+
+<!-- ✅ FAQ -->
+<section class="faq text-center">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-item"><button class="faq-question">Is this safe? <span>+</span></button><div class="faq-answer"><p>Yes, 100% natural.</p></div></div>
+  <div class="faq-item"><button class="faq-question">Any side effects? <span>+</span></button><div class="faq-answer"><p>No side effects reported.</p></div></div>
+  <div class="faq-item"><button class="faq-question">When will I see results? <span>+</span></button><div class="faq-answer"><p>Most see changes in 4–6 weeks.</p></div></div>
+</section>
+
+<!-- ✅ FOOTER -->
+<footer><p>© 2025 Shreejee Ayucare. All Rights Reserved.</p></footer>
+
+<!-- ✅ MODAL -->
+<div id="consultModal" class="fixed inset-0 bg-black/50 flex items-center justify-center hidden z-[2000]">
+  <div class="bg-white rounded-2xl shadow-lg w-11/12 md:w-1/3 p-6 relative">
+    <button onclick="closeModal()" class="absolute top-3 right-3 text-gray-500 hover:text-black">&times;</button>
+    <h2 class="text-2xl font-bold mb-4 text-center">Book Free Consultation</h2>
+    
+    <form id="consultForm" class="space-y-4">
+      <div>
+        <label class="block mb-1 font-medium">Name</label>
+        <input type="text" name="name" required class="w-full border p-2 rounded-lg">
+      </div>
+      <div>
+        <label class="block mb-1 font-medium">Phone</label>
+        <input type="tel" name="phone" required class="w-full border p-2 rounded-lg">
+      </div>
+      <button type="submit" class="w-full bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- ✅ STICKY CTA -->
+<div class="sticky-cta">
+  <button class="openModalBtn w-full md:w-auto bg-black text-white px-8 py-4 rounded-lg font-semibold shadow hover:bg-gray-800 transition">BOOK FREE CONSULTATION</button>
+</div>
+
+
+
+
+<script>
+  lucide.createIcons();
+
+  // HERO IMAGE SLIDER
+  const mainImage = document.getElementById("mainImage");
+  const thumbnails = document.querySelectorAll(".thumbnail img");
+  let currentIndex = 0; let autoSlideInterval;
+  function showImage(index) { if (!thumbnails[index]) return; mainImage.classList.add("fade-out"); setTimeout(()=>{ mainImage.src = thumbnails[index].src; mainImage.classList.remove("fade-out"); mainImage.classList.add("fade-in"); setTimeout(()=>mainImage.classList.remove("fade-in"),400); },400); currentIndex = index; }
+  function startAutoSlide(){ autoSlideInterval = setInterval(()=>{ let nextIndex=(currentIndex+1)%thumbnails.length; showImage(nextIndex);},3000);}
+  thumbnails.forEach((img,i)=>{ img.addEventListener("click",()=>{ clearInterval(autoSlideInterval); showImage(i); startAutoSlide();});});
+  startAutoSlide();
+
+  // FAQ
+  document.querySelectorAll(".faq-question").forEach(button=>{
+    button.addEventListener("click",()=>{const answer=button.nextElementSibling; const isOpen=answer.style.maxHeight; document.querySelectorAll(".faq-answer").forEach(a=>a.style.maxHeight=null); if(!isOpen){answer.style.maxHeight=answer.scrollHeight+"px";}});
+  });
+
+  // REVIEWS
+  const reviews=document.querySelectorAll(".review"); const dots=document.querySelectorAll(".review-dots .dot"); let reviewIndex=0;
+  function showReview(index){reviews.forEach((rev,i)=>{rev.classList.remove("active"); dots[i].classList.remove("active");}); reviews[index].classList.add("active"); dots[index].classList.add("active"); reviewIndex=index;}
+  setInterval(()=>{let nextReview=(reviewIndex+1)%reviews.length; showReview(nextReview);},5000); dots.forEach((dot,i)=>{dot.addEventListener("click",()=>showReview(i));}); showReview(0);
+
+  // MODAL
+  document.querySelectorAll(".openModalBtn").forEach(btn=>{btn.addEventListener("click",()=>{document.getElementById("consultModal").classList.remove("hidden");});});
+  function closeModal(){document.getElementById("consultModal").classList.add("hidden");}
+</script>
+
+<!-- Firebase SDK -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+  import { getDatabase, ref, push, set } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+
+  
+    const firebaseConfig = {
+  apiKey: "AIzaSyB1wbJonjyJQDrPJWbMCVBtRolJH4HDskU",
+  authDomain: "shreejee-ayucare.firebaseapp.com",
+  databaseURL: "https://shreejee-ayucare-default-rtdb.firebaseio.com",
+  projectId: "shreejee-ayucare",
+  storageBucket: "shreejee-ayucare.firebasestorage.app",
+  messagingSenderId: "247248655859",
+  appId: "1:247248655859:web:b09bfc30ff6953aad42e86",
+  measurementId: "G-3ZCF4H1QPP"
+};
+  // ✅ Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const db = getDatabase(app);
+
+  // ✅ Modal functions
+  function openModal() {
+    document.getElementById("consultModal").classList.remove("hidden");
+  }
+  function closeModal() {
+    document.getElementById("consultModal").classList.add("hidden");
+  }
+
+  // ✅ Attach listener AFTER DOM is loaded
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("consultForm");
+
+    if (form) {
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const name = e.target.name.value.trim();
+        const phone = e.target.phone.value.trim();
+
+        console.log("Name:", name, "Phone:", phone);
+
+        try {
+          // ✅ Create a new unique entry under consultations
+          const consultationsRef = ref(db, "consultations");
+          const newConsultRef = push(consultationsRef);
+
+          await set(newConsultRef, {
+            name,
+            phone,
+            timestamp: new Date().toISOString()
+          });
+
+          // 🔥 Track as a Lead in Meta Pixel
+          fbq('track', 'Lead', {
+            content_name: 'Consultation Booking',
+            value: 0,
+            currency: 'INR'
+          });
+
+          alert("✅ Consultation booked successfully!");
+          form.reset();
+          closeModal();
+        } catch (err) {
+          console.error("Realtime DB Error:", err);
+          alert("❌ Something went wrong. Try again!");
+        }
+      });
+    }
+  });
+</script>
+
+
+</body>
+</html>
